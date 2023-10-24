@@ -1,23 +1,42 @@
 *{
     box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: 'Arial', Arial, serif;
     background-color : grey;
 }
 
 a{
     color: black;
-    font-family: 'Calibri', Arial, serif;
-    font-size: 8px;
+    /*font-size: 8px;*/
+    font-weight: bold;
     text-align: left;
-}
-
-.subforum{
-    margin-top: 10px;
+    text-decoration: none;
 }
 
 .container{
     margin: 20px;
     padding: 20px;
 }
+
+.forum{
+    margin-top: 10px;
+}
+
+.forumRow{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.forumColumn{
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color: white;
+}
+
 
 .title{
     color : orange;
@@ -37,17 +56,18 @@ a{
     -webkit-text-stroke: 1px black;
 }
 
-.link{
-    color : white;
-    font-family: 'Arial', Arial, serif;
-    text-decoration: none;
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 @media screen and (max-width: 460px) {
 
     /* veci do mobilu */
+    .container{
+        margin: 10px;
+    }
 
 }
 
