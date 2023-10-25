@@ -37,6 +37,49 @@ a{
     background-color: white;
 }
 
+/*
+        HEADER -- Navbar
+ */
+
+header {
+    background: darkorange;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li .navSite
+{
+    float: left;
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 25px;
+}
+
+nav li .navSiteLogin
+{
+    float: right;
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 25px;
+}
+
+/*
+        Titulok
+ */
 
 .title{
     color : orange;
@@ -67,6 +110,15 @@ a{
     /* veci do mobilu */
     .container{
         margin: 10px;
+    }
+
+    .subtitle{
+        color : white;
+        font-family: 'Arial', Arial, serif;
+        font-size: 24px;
+        text-align: center;
+        text-shadow: 2px 2px black;
+        -webkit-text-stroke: 1px black;
     }
 
 }
